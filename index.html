@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Mario-Like Game</title>
+    <title>Super Mario-Like Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Jeu de Platforme 2D</h1>
+    <h1>Super Mario-Like Game</h1>
     <div id="game-container">
         <div id="player"></div>
-        <div id="platform"></div>
+        <div class="platform" style="bottom: 0; left: 0; width: 100%;"></div>
+        <div class="platform" style="bottom: 150px; left: 100px; width: 150px;"></div>
+        <div class="platform" style="bottom: 300px; left: 400px; width: 200px;"></div>
         <div id="monster"></div>
+    </div>
+    <div id="score-board">
+        Score: <span id="score">0</span>
     </div>
     <script src="script.js"></script>
 </body>
