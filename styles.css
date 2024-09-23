@@ -1,4 +1,4 @@
-/* Style global */
+/* Style général */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -13,6 +13,7 @@ body {
     position: relative;
     margin: 0 auto;
     overflow: hidden;
+    transform: translateX(0);  /* Pour le défilement */
 }
 
 #player {
@@ -24,13 +25,10 @@ body {
     left: 50px;
 }
 
-#platform {
-    width: 100%;
+.platform {
     height: 20px;
     background-color: green;
     position: absolute;
-    bottom: 0;
-    left: 0;
 }
 
 #monster {
@@ -43,7 +41,7 @@ body {
     animation: moveMonster 3s infinite alternate;
 }
 
-/* Animation pour faire bouger le monstre */
+/* Animation du monstre */
 @keyframes moveMonster {
     from {
         left: 700px;
@@ -51,4 +49,11 @@ body {
     to {
         left: 500px;
     }
+}
+
+/* Score */
+#score-board {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
 }
